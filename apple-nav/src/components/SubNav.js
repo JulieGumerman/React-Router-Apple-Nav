@@ -1,15 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 let ThatOleSubNav=styled.div`
     background: #f7f7f7;
 `
 
-function SubNav() {
+function SubNav(props) {
+    const products = props.items;
+    const navList = products.map(item => {
+        return <Link key={item}>{item}</Link>
+    })
+    console.log("nav list: ", navList);
     return(
         <ThatOleSubNav>
-            <h3>Hi! I am the subnav!</h3>
-        </ThatOleSubNav>
+            {navList}
+        </ThatOleSubNav> 
     )
 }
 

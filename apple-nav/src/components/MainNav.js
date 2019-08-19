@@ -27,11 +27,11 @@ function MainNav() {
                 <Link to="/" className="nav-link">Apple Icon</Link>
                 <Link to="/mac" className="nav-link">Mac</Link>
                 <Link to="/ipad" className="nav-link">iPad</Link>
-                <Link className="nav-link">iPhone</Link>
-                <Link className="nav-link">Watch</Link>
-                <Link className="nav-link">TV</Link>
-                <Link className="nav-link">Music</Link>
-                <Link className="nav-link">Support</Link>
+                <Link to="/iphone" className="nav-link">iPhone</Link>
+                <Link to="/watch"className="nav-link">Watch</Link>
+                <Link to="/tv" className="nav-link">TV</Link>
+                <Link to="/music" className="nav-link">Music</Link>
+                <Link to="/support" className="nav-link">Support</Link>
                 </NavBar>
             </HeaderDiv>
         </div>

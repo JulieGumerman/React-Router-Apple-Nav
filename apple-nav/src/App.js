@@ -5,6 +5,11 @@ import { Route} from "react-router-dom";
 import Home from "./components/Home";
 import Mac from "./components/Mac";
 import IPad from "./components/IPad";
+import IPhone from "./components/IPhone";
+import Watch from "./components/Watch";
+import TV from "./components/TV";
+import Music from "./components/Music";
+import Support from "./components/Support";
 
 
 

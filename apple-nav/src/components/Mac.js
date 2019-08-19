@@ -1,11 +1,17 @@
 import React from "react";
 import SubNav from "./SubNav";
+import { macProducts } from "../data";
 
 function Mac() {
+    console.log(macProducts);
+    // const products = macProducts.map(product => {
+    //     return (<Link>{product}</Link>)
+    // })
+
     return (
         <div>
-            <SubNav />
-            <h1>MacBooks are lovely...So are iMacs...and MacBook Airs...</h1>
+            <SubNav items={macProducts}/> 
+            <h2>Yay! Macbooks!</h2>
         </div>
     )
 }
