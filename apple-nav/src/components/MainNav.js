@@ -24,9 +24,9 @@ function MainNav() {
         <div>
             <HeaderDiv>
                 <NavBar>
-                <Link className="nav-link">Apple Icon</Link>
-                <Link className="nav-link">Mac</Link>
-                <Link className="nav-link">iPad</Link>
+                <Link to="/" className="nav-link">Apple Icon</Link>
+                <Link to="/mac" className="nav-link">Mac</Link>
+                <Link to="/ipad" className="nav-link">iPad</Link>
                 <Link className="nav-link">iPhone</Link>
                 <Link className="nav-link">Watch</Link>
                 <Link className="nav-link">TV</Link>
@@ -34,7 +34,6 @@ function MainNav() {
                 <Link className="nav-link">Support</Link>
                 </NavBar>
             </HeaderDiv>
-            <SubNav />
         </div>
     )
 }
