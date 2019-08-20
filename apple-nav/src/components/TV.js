@@ -5,8 +5,8 @@ import { tv } from "../data";
 function TV() {
     return(
         <div>
-        <SubNav items={tv} />
-        <h1>TV! Not a fan!!!</h1>
+            <SubNav items={tv} />
+            <h1>TV! Not a fan!!!</h1>
         </div>
     )
 }

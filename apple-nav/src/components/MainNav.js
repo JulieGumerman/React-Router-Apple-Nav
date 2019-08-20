@@ -1,7 +1,10 @@
 import React from "react";
-import SubNav from "./SubNav";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCampground } from '@fortawesome/free-solid-svg-icons';
+
+let coffee=<FontAwesomeIcon icon={faCampground} />
 
 let HeaderDiv = styled.div`
 
@@ -11,7 +14,8 @@ let HeaderDiv = styled.div`
     display: flex;
 `
 const NavBar = styled.div`
-    border: 1px red solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -24,7 +28,7 @@ function MainNav() {
         <div>
             <HeaderDiv>
                 <NavBar>
-                <Link to="/" className="nav-link">Apple Icon</Link>
+                <Link to="/" className="nav-link">{coffee}</Link>
                 <Link to="/mac" className="nav-link">Mac</Link>
                 <Link to="/ipad" className="nav-link">iPad</Link>
                 <Link to="/iphone" className="nav-link">iPhone</Link>

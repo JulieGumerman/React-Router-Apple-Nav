@@ -4,17 +4,28 @@ import { Link } from "react-router-dom";
 
 let ThatOleSubNav=styled.div`
     background: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+`
+let NavContainer=styled.div`
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 `
 
 function SubNav(props) {
     const products = props.items;
     const navList = products.map(item => {
-        return <Link key={item}>{item}</Link>
+        return <Link className="subnav-links" key={item}>{item}</Link>
     })
     console.log("nav list: ", navList);
     return(
+        
         <ThatOleSubNav>
-            {navList}
+            <NavContainer>
+                {navList}
+            </NavContainer>
         </ThatOleSubNav> 
     )
 }

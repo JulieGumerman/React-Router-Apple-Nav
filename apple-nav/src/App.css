@@ -1,4 +1,19 @@
 .nav-link {
-  color: white;
+  color:#fcfcfc;
   text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #828687;
+ 
+}
+
+.subnav-links {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+}
+
+.subnav-links:hover {
+   color: #328ba8; 
 }

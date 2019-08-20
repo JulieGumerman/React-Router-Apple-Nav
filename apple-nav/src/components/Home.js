@@ -2,7 +2,10 @@ import React from "react";
 
 function Home() {
     return(
-        <h1>You are home!</h1>
+        <div>
+            <img src="../images/mountain-hero.jpg" alt="inspirational mountains" />
+        </div>
+        
     )
 }
 
